@@ -2,6 +2,9 @@ package Lab10;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Arrays;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class SelectionSortTest {
@@ -27,13 +30,10 @@ class SelectionSortTest {
         int[] selSortarr = new int[5];
         selSortarr = temp.basicSelectionSort(arr);
         
-        assertEquals(Sortedarr, selSortarr);
-		fail("All positive failed");
+        assertArrayEquals(Sortedarr, selSortarr);
 	}
 	@Test
 	void TestNegative() {
-		
-			
 			int[] arr = new int[5];
 	        arr[0] = -8;
 	        arr[1] = -9;
@@ -52,8 +52,8 @@ class SelectionSortTest {
 	        int[] selSortarr = new int[5];
 	        selSortarr = temp.basicSelectionSort(arr);
 	        
-	        assertEquals(Sortedarr, selSortarr);
-	        fail("All Negative failed");
+	        assertArrayEquals(Sortedarr, selSortarr);
+	    
 	}
 	
 	@Test
@@ -69,15 +69,14 @@ class SelectionSortTest {
         Sortedarr[0] = -10;
         Sortedarr[1] = -9;
         Sortedarr[2] = -8;
-        Sortedarr[3] = 7;
-        Sortedarr[4] = 2;
+        Sortedarr[3] = 2;
+        Sortedarr[4] = 7;
         
         SelectionSort temp = new SelectionSort();
         int[] selSortarr = new int[5];
         selSortarr = temp.basicSelectionSort(arr);
         
         assertEquals(Sortedarr, selSortarr);
-        fail("Mixed Numbers failed");
 	}
 	
 	@Test
@@ -92,7 +91,7 @@ class SelectionSortTest {
         int[] Sortedarr = new int[5];
         Sortedarr[0] = -10;
         Sortedarr[1] = -9;
-        Sortedarr[2] = -8;
+        Sortedarr[2] = -7;
         Sortedarr[3] = 2;
         Sortedarr[4] = 2;
         
@@ -101,7 +100,6 @@ class SelectionSortTest {
         selSortarr = temp.basicSelectionSort(arr);
         
         assertEquals(Sortedarr, selSortarr);
-        fail("Test Duplicates failed");
 	}
 	
 
