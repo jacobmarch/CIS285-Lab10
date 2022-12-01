@@ -53,7 +53,6 @@ class SelectionSortTest {
 	        selSortarr = temp.basicSelectionSort(arr);
 	        
 	        assertArrayEquals(Sortedarr, selSortarr);
-	    
 	}
 	
 	@Test
@@ -76,7 +75,7 @@ class SelectionSortTest {
         int[] selSortarr = new int[5];
         selSortarr = temp.basicSelectionSort(arr);
         
-        assertEquals(Sortedarr, selSortarr);
+        assertArrayEquals(Sortedarr, selSortarr);
 	}
 	
 	@Test
@@ -99,7 +98,7 @@ class SelectionSortTest {
         int[] selSortarr = new int[5];
         selSortarr = temp.basicSelectionSort(arr);
         
-        assertEquals(Sortedarr, selSortarr);
+        assertArrayEquals(Sortedarr, selSortarr);
 	}
 	
 
